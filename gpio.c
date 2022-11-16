@@ -18,4 +18,3 @@ void config_pwm_gpio(void){
     P6->SEL0 |=BIT6;
     P6->SEL1 &= ~BIT6;
 }
-
