@@ -30,4 +30,3 @@ void config_pwm_gpio(void){
     // SW5 4.5
 
 }
-
