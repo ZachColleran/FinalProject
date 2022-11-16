@@ -17,5 +17,17 @@ void config_pwm_gpio(void){
     P6->REN &= ~BIT6;
     P6->SEL0 |=BIT6;
     P6->SEL1 &= ~BIT6;
+
+    // SW1 4.1
+    P4->
+
+    // SW2 4.2
+
+    // SW3 4.3
+
+    // SW4 4.4
+
+    // SW5 4.5
+
 }
 
