@@ -28,7 +28,7 @@ void config_pwm_timer(void)
     TIMER_A0 -> CCTL[1] &= TIMER_A_CCTLN_OUTMOD_3; //TOGGLE MODE
 
     TIMER_A0->CCR[0] = TICKS;
-    TIMER_A0->CCTL[1] |= TIMER_A_CCTLN_CCIE; // enable inturrupts for compare/capture
+    TIMER_A0->CCTL[1] |= TIMER_A_CCTLN_CCIE; // enable interrupts for compare/capture
 
 
     /* ////////// TIMER A2 ///////////// */
@@ -43,7 +43,7 @@ void config_pwm_timer(void)
     TIMER_A2 -> CCTL[3] &= TIMER_A_CCTLN_OUTMOD_3; //TOGGLE MODE
 
     TIMER_A2->CCR[3] = TICKS;
-    TIMER_A2->CCTL[3] |= TIMER_A_CCTLN_CCIE; // enable inturrupts for compare/capture
+    TIMER_A2->CCTL[3] |= TIMER_A_CCTLN_CCIE; // enable interrupts for compare/capture
 
 }
 
