@@ -12,11 +12,11 @@
 
 #define TICKS ((uint16_t) 0x0BB8) // 3000
 
-#define TICKS_1
-#define TICKS_2
-#define TICKS_3
-#define TICKS_4
-#define TICKS_5
+#define TICKS_1 11466
+#define TICKS_2 10823
+#define TICKS_3 10216
+#define TICKS_4 9642
+#define TICKS_5 9101
 
 
 // 1ms period
