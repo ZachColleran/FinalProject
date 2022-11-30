@@ -32,11 +32,11 @@ void config_pwm_timer(void)
 
 }
 
-//C4 - 261.63 Hz = 3.82219 ms
-//C#4/Db4 - 277.18 Hz = 3.60776 ms
-//D4 - 293.66 Hz = 3.40529 ms
-//D#4/Eb4 - 311.13 Hz = 3.21409 ms
-//E4 - 329.63 Hz = 3.03370 ms
+//C4 - 261.63 Hz = 3.82219 ms = 11466 ticks
+//C#4/Db4 - 277.18 Hz = 3.60776 ms = 10823 ticks
+//D4 - 293.66 Hz = 3.40529 ms = 10216 ticks
+//D#4/Eb4 - 311.13 Hz = 3.21409 ms = 9642 ticks
+//E4 - 329.63 Hz = 3.03370 ms = 9101 ticks
 
 void config_nvic(void) {
     __NVIC_EnableIRQ(TA0_N_IRQn);
