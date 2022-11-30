@@ -9,8 +9,11 @@
 #define SCHEDULER_H_
 #include "msp.h"
 
-#define ULTRASONIC_START_CB 0x01
-#define ULTRASONIC_END_CB 0x02
+#define BUTTON_1_CB 0x01
+#define BUTTON_2_CB 0x02
+#define BUTTON_3_CB 0x04
+#define BUTTON_4_CB 0x08
+#define BUTTON_5_CB 0x10
 
 void scheduler_init(void);
 

@@ -4,6 +4,5 @@
 "./scheduler.obj"
 "./startup_msp432p4111_ccs.obj"
 "./system_msp432p4111.obj"
-"./ultrasonic.obj"
 "../msp432p4111.cmd"
 -llibc.a

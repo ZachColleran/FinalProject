@@ -25,15 +25,6 @@ void stop_pwm(void);
 
 void start_pwm(void);
 
-void config_pwm_gpio(void);
-void timer_a_2_init_measure_echo_cci(void);
-
-void config_pwm_timer_ultrasonic(void);
-
 void config_nvic(void);
-
-uint16_t read_distance(void);
-
-void ultrasonic_start_pulse(void);
 
 #endif /* PWM_H_ */

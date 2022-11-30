@@ -10,7 +10,8 @@
 
 #include "msp.h"
 
-
+void config_button_gpio(void);
+void config_pwm_gpio(void);
 
 
 #endif /* GPIO_H_ */

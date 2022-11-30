@@ -1,6 +1,7 @@
 #include "msp.h"
 #include "scheduler.h"
-#include "ultrasonic.h"
+#include "pwm.h"
+#include "gpio.h"
 /**
  * main.c
  */
@@ -17,13 +18,7 @@ void main(void)
     stop_pwm(); //KNOWN STATE
     config_pwm_gpio();
     config_pwm_timer();
-//    timer_a_0_init_trig(); // Timer A0 for trigger pulse
-//    timer_a_2_init_measure_echo_cci(); // Timer A2 for echo timing
-    //ultrasonic_test_calc_distance_cm();
-
     config_nvic();
-
-    //todo config gpio
     start_pwm();
     __enable_interrupt();
 

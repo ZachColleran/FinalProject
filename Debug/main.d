@@ -19,10 +19,8 @@ main.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/cmsis_compiler.h
 main.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/cmsis_ccs.h
 main.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/system_msp432p4111.h
 main.obj: ../scheduler.h
-main.obj: ../ultrasonic.h
 main.obj: ../pwm.h
-main.obj: C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h
-main.obj: C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h
+main.obj: ../gpio.h
 
 ../main.c:
 
@@ -62,11 +60,7 @@ C:/ti/ccs1200/ccs/ccs_base/arm/include/system_msp432p4111.h:
 
 ../scheduler.h:
 
-../ultrasonic.h:
-
 ../pwm.h:
 
-C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdio.h:
-
-C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdarg.h:
+../gpio.h:
 

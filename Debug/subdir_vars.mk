@@ -2,6 +2,8 @@
 # Automatically-generated file. Do not edit!
 ################################################################################
 
+SHELL = cmd.exe
+
 # Add inputs and outputs from these tool invocations to the build variables 
 CMD_SRCS += \
 ../msp432p4111.cmd 
@@ -12,8 +14,7 @@ C_SRCS += \
 ../pwm.c \
 ../scheduler.c \
 ../startup_msp432p4111_ccs.c \
-../system_msp432p4111.c \
-../ultrasonic.c 
+../system_msp432p4111.c 
 
 C_DEPS += \
 ./gpio.d \
@@ -21,8 +22,7 @@ C_DEPS += \
 ./pwm.d \
 ./scheduler.d \
 ./startup_msp432p4111_ccs.d \
-./system_msp432p4111.d \
-./ultrasonic.d 
+./system_msp432p4111.d 
 
 OBJS += \
 ./gpio.obj \
@@ -30,8 +30,7 @@ OBJS += \
 ./pwm.obj \
 ./scheduler.obj \
 ./startup_msp432p4111_ccs.obj \
-./system_msp432p4111.obj \
-./ultrasonic.obj 
+./system_msp432p4111.obj 
 
 OBJS__QUOTED += \
 "gpio.obj" \
@@ -39,8 +38,7 @@ OBJS__QUOTED += \
 "pwm.obj" \
 "scheduler.obj" \
 "startup_msp432p4111_ccs.obj" \
-"system_msp432p4111.obj" \
-"ultrasonic.obj" 
+"system_msp432p4111.obj" 
 
 C_DEPS__QUOTED += \
 "gpio.d" \
@@ -48,8 +46,7 @@ C_DEPS__QUOTED += \
 "pwm.d" \
 "scheduler.d" \
 "startup_msp432p4111_ccs.d" \
-"system_msp432p4111.d" \
-"ultrasonic.d" 
+"system_msp432p4111.d" 
 
 C_SRCS__QUOTED += \
 "../gpio.c" \
@@ -57,7 +54,6 @@ C_SRCS__QUOTED += \
 "../pwm.c" \
 "../scheduler.c" \
 "../startup_msp432p4111_ccs.c" \
-"../system_msp432p4111.c" \
-"../ultrasonic.c" 
+"../system_msp432p4111.c" 
 
 
