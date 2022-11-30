@@ -14,38 +14,72 @@ void main(void)
     // Set CAP and CCI
 
     WDT_A->CTL = WDT_A_CTL_PW | WDT_A_CTL_HOLD; // stop watchdog timer
-    __disable_interrupt();
+
     stop_pwm(); //KNOWN STATE
     config_pwm_gpio();
     config_pwm_timer();
-    config_nvic();
+    config_button_gpio();
     start_pwm();
-    __enable_interrupt();
+
+    uint16_t average = 0;
+    uint16_t total = 0;
+    uint16_t buttons_pressed = 0;
 
     while(1) {
-        if(BUTTON_1_CB & get_scheduled_event()){
-          remove_scheduled_event(BUTTON_1_CB);
-          config_pwm_ticks_a0()
+
+        if(P4->IN & BIT0 == BIT0) {
+            buttons_pressed++;
+            average = ((total + TICKS_1) / buttons_pressed);
+            config_pwm_ticks_a0(average);
+        }
+        else {
+            buttons_pressed--;
+            average = (total - TICKS_1) / buttons_pressed;
+            config_pwm_ticks_a0(average);
         }
 
-        if(BUTTON_2_CB & get_scheduled_event()){
-          remove_scheduled_event(BUTTON_2_CB);
-          config_pwm_ticks_a0()
+        if(P4->IN & BIT2 == BIT2) {
+            buttons_pressed++;
+            average = (total + TICKS_2) / buttons_pressed;
+            config_pwm_ticks_a0(average);
+        }
+        else {
+            buttons_pressed--;
+            average = (total - TICKS_2) / buttons_pressed;
+            config_pwm_ticks_a0(average);
         }
 
-        if(BUTTON_3_CB & get_scheduled_event()){
-          remove_scheduled_event(BUTTON_3_CB);
-          config_pwm_ticks_a0()
+        if(P4->IN & BIT4 == BIT4) {
+            buttons_pressed++;
+            average = (total + TICKS_3) / buttons_pressed;
+            config_pwm_ticks_a0(average);
+        }
+        else {
+            buttons_pressed--;
+            average = (total - TICKS_3) / buttons_pressed;
+            config_pwm_ticks_a0(average);
         }
 
-        if(BUTTON_4_CB & get_scheduled_event()){
-          remove_scheduled_event(BUTTON_4_CB);
-          config_pwm_ticks_a0()
+        if(P4->IN & BIT5 == BIT5) {
+            buttons_pressed++;
+            average = (total + TICKS_4) / buttons_pressed;
+            config_pwm_ticks_a0(average);
+        }
+        else {
+            buttons_pressed--;
+            average = (total - TICKS_4) / buttons_pressed;
+            config_pwm_ticks_a0(average);
         }
 
-        if(BUTTON_5_CB & get_scheduled_event()){
-          remove_scheduled_event(BUTTON_5_CB);
-          config_pwm_ticks_a0()
+        if(P4->IN & BIT7 == BIT7) {
+            buttons_pressed++;
+            average = (total + TICKS_5) / buttons_pressed;
+            config_pwm_ticks_a0(average);
+        }
+        else {
+            buttons_pressed--;
+            average = (total - TICKS_5) / buttons_pressed;
+            config_pwm_ticks_a0(average);
         }
     }
 }

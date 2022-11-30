@@ -38,9 +38,7 @@ void config_pwm_timer(void)
 //D#4/Eb4 - 311.13 Hz = 3.21409 ms = 9642 ticks
 //E4 - 329.63 Hz = 3.03370 ms = 9101 ticks
 
-void config_nvic(void) {
-    __NVIC_EnableIRQ(TA0_N_IRQn);
-}
+
 
 void config_pwm_ticks_a0(uint16_t ticks) {
     TIMER_A0->CCR[0] = ticks;

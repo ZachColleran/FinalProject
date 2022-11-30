@@ -34,6 +34,4 @@ void stop_pwm(void);
 
 void start_pwm(void);
 
-void config_nvic(void);
-
 #endif /* PWM_H_ */

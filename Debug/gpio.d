@@ -19,6 +19,7 @@ gpio.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/core_cm4.h
 gpio.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/cmsis_compiler.h
 gpio.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/cmsis_ccs.h
 gpio.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/system_msp432p4111.h
+gpio.obj: ../scheduler.h
 
 ../gpio.c:
 
@@ -57,4 +58,6 @@ C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/cmsis_compiler.h:
 C:/ti/ccs1200/ccs/ccs_base/arm/include/CMSIS/cmsis_ccs.h:
 
 C:/ti/ccs1200/ccs/ccs_base/arm/include/system_msp432p4111.h:
+
+../scheduler.h:
 
