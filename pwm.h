@@ -9,8 +9,15 @@
 #define PWM_H_
 #include "msp.h"
 #include "scheduler.h"
+
 #define TICKS ((uint16_t) 0x0BB8) // 3000
-#define TICKS_2 ((uint16_t) 0xFFFF) // max
+
+#define TICKS_1
+#define TICKS_2
+#define TICKS_3
+#define TICKS_4
+#define TICKS_5
+
 
 // 1ms period
 // (tassel * period) / input divider = ticks
@@ -20,6 +27,8 @@
 //1KHZ -> 0.001ms Period
 //TASSEL*(PERIOD)= TICKS
 void config_pwm_timer(void);
+
+void config_pwm_ticks_a0(uint16_t ticks);
 
 void stop_pwm(void);
 

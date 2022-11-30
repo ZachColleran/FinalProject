@@ -23,9 +23,29 @@ void main(void)
     __enable_interrupt();
 
     while(1) {
-//        if(ULTRASONIC_END_CB & get_scheduled_event()){
-//          remove_scheduled_event(ULTRASONIC_END_CB);
-//          ultrasonic_calc_distance_cb();
-//        }
+        if(BUTTON_1_CB & get_scheduled_event()){
+          remove_scheduled_event(BUTTON_1_CB);
+          config_pwm_ticks_a0()
+        }
+
+        if(BUTTON_2_CB & get_scheduled_event()){
+          remove_scheduled_event(BUTTON_2_CB);
+          config_pwm_ticks_a0()
+        }
+
+        if(BUTTON_3_CB & get_scheduled_event()){
+          remove_scheduled_event(BUTTON_3_CB);
+          config_pwm_ticks_a0()
+        }
+
+        if(BUTTON_4_CB & get_scheduled_event()){
+          remove_scheduled_event(BUTTON_4_CB);
+          config_pwm_ticks_a0()
+        }
+
+        if(BUTTON_5_CB & get_scheduled_event()){
+          remove_scheduled_event(BUTTON_5_CB);
+          config_pwm_ticks_a0()
+        }
     }
 }

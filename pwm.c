@@ -36,6 +36,10 @@ void config_nvic(void) {
     __NVIC_EnableIRQ(TA0_N_IRQn);
 }
 
+void config_pwm_ticks_a0(uint16_t ticks) {
+    TIMER_A0->CCR[0] = ticks;
+}
+
 
 
 
