@@ -21,6 +21,7 @@ main.obj: C:/ti/ccs1200/ccs/ccs_base/arm/include/system_msp432p4111.h
 main.obj: ../scheduler.h
 main.obj: ../pwm.h
 main.obj: ../gpio.h
+main.obj: C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h
 
 ../main.c:
 
@@ -63,4 +64,6 @@ C:/ti/ccs1200/ccs/ccs_base/arm/include/system_msp432p4111.h:
 ../pwm.h:
 
 ../gpio.h:
+
+C:/ti/ccs1200/ccs/tools/compiler/ti-cgt-arm_20.2.7.LTS/include/stdbool.h:
 

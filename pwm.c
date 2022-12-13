@@ -32,6 +32,8 @@ void config_pwm_timer(void)
 
 }
 
+// ticks used for creating different sounds
+
 //C4 - 261.63 Hz = 3.82219 ms = 11466 ticks
 //C#4/Db4 - 277.18 Hz = 3.60776 ms = 10823 ticks
 //D4 - 293.66 Hz = 3.40529 ms = 10216 ticks
@@ -39,10 +41,10 @@ void config_pwm_timer(void)
 //E4 - 329.63 Hz = 3.03370 ms = 9101 ticks
 
 
-
 void config_pwm_ticks_a0(uint16_t ticks) {
     TIMER_A0->CCR[0] = ticks;
 }
+
 
 
 
